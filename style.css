@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Machina;
+    src: url(Machina\ Inktrap\ Medium.ttf);
+}
+
+@font-face {
+    font-family: Machinal;
+    src: url(PPNeueMachina_\ Light.ttf);
+}
+
+:root {
+    --salmon: #ef9d71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #aedee0;
+    --dsalmon: #532521;
+
+}
+
+body {
+    transition: background-color ease-out .5s;
+}
+
+.vediodiv {
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection {
+    background-color: #f0b595;
+}
+
+body[theme="black"] {
+    background-color: #000;
+}
+
+body[theme="black"] .section {
+    color: #fff;
+}
+
+body[theme="cyan"] {
+    background-color: #aedee0;
+}
+
+body[theme="cyan"] .section {
+    color: rgb(122, 121, 124)ecc;
+}
+
+body[theme="salmon"] {
+    background-color: #EF9D71;
+}
+
+body[theme="salmon"] .section {
+    color: rgb(74, 47, 35);
+}
+
+body[theme="light"] {
+    background-color: #fff;
+}
+
+body[theme="light"] .section {
+    color: #1b1a1a;
+}
+
+.bluelayer {
+    opacity: 0;  
+    transition:opacity 0.3s ease, transform 0.3s ease;
+}
+
+.listelem:hover .bluelayer {
+    opacity: 1;  
+}
+.box{
+    color: #aedee0;
+}
+.circle { 
+    animation: circularMotion 10s linear infinite ;
+}
+
+@keyframes circularMotion {
+    0% {
+        transform: rotate(0deg)    ;
+    }
+    100% {
+        transform: rotate(360deg)    ;
+    }
+}
+
+.about h1:hover{
+color: #F5F19C;
+}
